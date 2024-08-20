@@ -6,7 +6,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 import os
-os.environ["OPENAI_API_KEY"] = os.getenv("OPENAI_API_KEY")
+openai_api_key = st.text_input("Enter your OpenAI API key", type="password")
+os.environ["OPENAI_API_KEY"] = openai_api_key
 os.environ["OPENAI_MODEL_NAME"]="gpt-4-0125-preview"
 
 
