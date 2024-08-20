@@ -2,7 +2,7 @@ from crewai import Agent
 from tools import yt_tool
 import faiss
 import numpy as np
-from streamlit import st
+import streamlit as st
 
 # Example FAISS setup
 class FAISSIndex:
@@ -32,7 +32,7 @@ openai_api_key = st.text_input("Enter your OpenAI API Key", type="password")
 # Prompt for OpenAI Model Name
 openai_model_name = st.selectbox(
     "Select your OpenAI Model",
-    ["gpt-3.5-turbo"]
+    ["gpt-3.5-turbo", "gpt-4", "gpt-4-0125-preview", "custom-model"]
 )
 
 # Check if the API key is provided
