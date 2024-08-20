@@ -2,4 +2,4 @@ crewai
 crewai_tools
 load_dotenv
 langchain-huggingface
-sqlite3 >= 3.35.0
+pysqlite3>=0.4.6
