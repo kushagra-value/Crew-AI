@@ -13,7 +13,7 @@ os.environ["OPENAI_MODEL_NAME"] = "gpt-4-0125-preview"
 # Create a senior blog content researcher
 blog_researcher = Agent(
     role='Blog Researcher from Youtube Videos',
-    goal='get the relevant video transcription for the topic {topic} from the provided Yt channel',
+    goal='Get the relevant video transcription for the topic {topic} from the provided YT channel',
     verbose=True,
     memory=True,
     backstory=(
